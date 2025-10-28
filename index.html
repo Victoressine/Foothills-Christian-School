@@ -431,7 +431,7 @@
       })();
   </script>
 
-  <!-- Hero Section with Smooth Mobile-Friendly Parallax Slideshow -->
+  <!-- Hero Section with Smooth Parallax Slideshow and Overlay Always Visible -->
 <section id="hero" class="relative w-full overflow-hidden scroll-smooth">
 
   <!-- Slides -->
@@ -453,8 +453,8 @@
       alt="Slide 5">
   </div>
 
-  <!-- Overlay Content (z-index fixed) -->
-  <div class="absolute inset-0 flex items-center justify-center px-4 z-10">
+  <!-- Overlay Content (Highest z-index to always display) -->
+  <div class="absolute inset-0 flex items-center justify-center px-4 z-20">
     <div class="bg-foothillsNavy/30 p-4 sm:p-6 md:p-8 rounded-lg text-center max-w-4xl lg:max-w-5xl">
       <h1
         class="w-full max-w-6xl text-center lg:text-left text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foothillsWhite mx-auto px-4 font-sans leading-tight">
@@ -469,11 +469,11 @@
 
   <!-- Navigation Arrows -->
   <button id="prev"
-    class="absolute top-1/2 left-4 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full hover:bg-green-600 transition z-20">
+    class="absolute top-1/2 left-4 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full hover:bg-green-600 transition z-30">
     &#10094;
   </button>
   <button id="next"
-    class="absolute top-1/2 right-4 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full hover:bg-green-600 transition z-20">
+    class="absolute top-1/2 right-4 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full hover:bg-green-600 transition z-30">
     &#10095;
   </button>
 
@@ -486,6 +486,7 @@
 
   #hero .slide-img {
     will-change: transform;
+    z-index: 0; /* Ensure slides stay under overlay */
   }
 </style>
 
@@ -495,10 +496,11 @@
   const next = document.getElementById('next');
   let current = 0;
 
+  // Show fade-in slide
   function showSlide(index) {
     slides.forEach((slide, i) => {
       slide.style.opacity = i === index ? "1" : "0";
-      slide.style.zIndex = 0; // keep slides under overlay
+      slide.style.zIndex = 0; // slides stay under overlay
     });
   }
 
@@ -528,17 +530,15 @@
   });
 
   function smoothParallax() {
-    scrollY += (targetY - scrollY) * 0.08;
+    scrollY += (targetY - scrollY) * 0.08; // smooth easing
     slides.forEach(slide => {
-      slide.style.transform = `translateY(${scrollY * 0.2}px)`;
+      slide.style.transform = `translateY(${scrollY * 0.2}px)`; // subtle parallax
     });
     requestAnimationFrame(smoothParallax);
   }
 
   smoothParallax();
 </script>
-
-
 
   <!-- Welcome Message Section -->
   <section id="headmaster-address" class="bg-slate-100 scroll-smooth" data-aos="fade-up">
