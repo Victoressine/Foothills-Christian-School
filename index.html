@@ -431,110 +431,114 @@
       })();
   </script>
 
-  <!-- Hero Section -->
-  <section id="home"
-    class="relative w-full h-screen md:h-[700px] overflow-hidden border-2 border-foothillsNavy rounded-lg text-white scroll-smooth">
+  <!-- Hero Section with Smooth Mobile-Friendly Parallax Slideshow -->
+<section id="hero" class="relative w-full overflow-hidden scroll-smooth">
 
-    <!-- Slides -->
-    <div id="slides" class="absolute inset-0">
-      <!-- Slide 1 -->
-      <div
-        class="slide absolute inset-0 bg-cover bg-center md:bg-cover md:bg-center transition-opacity duration-1000 opacity-0"
-        style="background-image: url('images/school001.png');"></div>
+  <!-- Slides -->
+  <div id="slides" class="relative w-full h-[320px] sm:h-[420px] md:h-[520px] lg:h-[620px] xl:h-[720px]">
+    <img src="images/school001.png"
+      class="slide-img w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-1000 opacity-0"
+      alt="Slide 1">
+    <img src="images/school-compound.png"
+      class="slide-img w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-1000 opacity-0"
+      alt="Slide 2">
+    <img src="images/image010.png"
+      class="slide-img w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-1000 opacity-0"
+      alt="Slide 3">
+    <img src="images/junior-high-students.png"
+      class="slide-img w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-1000 opacity-0"
+      alt="Slide 4">
+    <img src="images/library.png"
+      class="slide-img w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-1000 opacity-0"
+      alt="Slide 5">
+  </div>
 
-      <!-- Slide 2 -->
-      <div
-        class="slide absolute inset-0 bg-cover bg-center md:bg-cover md:bg-center transition-opacity duration-1000 opacity-0"
-        style="background-image: url('images/school-compound.png');"></div>
-
-      <!-- Slide 3 -->
-      <div
-        class="slide absolute inset-0 bg-cover bg-center md:bg-cover md:bg-center transition-opacity duration-1000 opacity-0"
-        style="background-image: url('images/image010.png');"></div>
-
-      <!-- Slide 4 -->
-      <div
-        class="slide absolute inset-0 bg-cover bg-center md:bg-cover md:bg-center transition-opacity duration-1000 opacity-0"
-        style="background-image: url('images/junior-high-students.png');"></div>
-
-      <!-- Slide 5 -->
-      <div
-        class="slide absolute inset-0 bg-cover bg-center md:bg-cover md:bg-center transition-opacity duration-1000 opacity-0"
-        style="background-image: url('images/library.png');"></div>
+  <!-- Overlay Content -->
+  <div class="absolute inset-0 flex items-center justify-center px-4">
+    <div class="bg-foothillsNavy/30 p-4 sm:p-6 md:p-8 rounded-lg text-center max-w-4xl lg:max-w-5xl">
+      <h1
+        class="w-full max-w-6xl text-center lg:text-left text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foothillsWhite mx-auto px-4 font-sans leading-tight">
+        Foothills Christian School
+      </h1>
+      <p
+        class="mt-2 text-base sm:text-lg md:text-xl lg:text-2xl text-foothillsRed font-semibold font-serif leading-tight">
+        Accra, Ghana
+      </p>
     </div>
+  </div>
 
-    <!-- Overlay -->
-    <div class="absolute inset-0 bg-foothillsNavy/40"></div>
+  <!-- Navigation Arrows -->
+  <button id="prev"
+    class="absolute top-1/2 left-4 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full hover:bg-green-600 transition z-20">
+    &#10094;
+  </button>
+  <button id="next"
+    class="absolute top-1/2 right-4 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full hover:bg-green-600 transition z-20">
+    &#10095;
+  </button>
 
-    <!-- Content -->
-    <div class="relative z-10 flex items-center justify-center h-full px-6 text-center">
-      <div class="p-6 md:p-10 rounded-lg" data-aos="fade-up" data-aos-duration="1000">
-        <div class="bg-foothillsNavy/30 p-4 sm:p-6 md:p-8 rounded-lg text-center max-w-4xl lg:max-w-5xl">
+</section>
 
-          <!-- School Name -->
-          <h1
-            class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-bold text-foothillsWhite leading-tight font-sans leading-tight">
-            Welcome To Foothills Christian School
-          </h1>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
 
-          <!-- Location -->
-          <p
-            class="mt-4 text-xl sm:text-base md:text-xl lg:text-1xl xl:text-2xl italic font-bold text-foothillsRed leading-relaxed font-serif leading-tight">
-            Accra - Ghana</p>
-        </div>
-      </div>
+  #hero .slide-img {
+    will-change: transform;
+  }
+</style>
 
-      <!-- Navigation Arrows -->
-      <button id="prev"
-        class="absolute top-1/2 left-4 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full hover:bg-green-600 transition z-20">
-        &#10094;
-      </button>
-      <button id="next"
-        class="absolute top-1/2 right-4 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full hover:bg-green-600 transition z-20">
-        &#10095;
-      </button>
-  </section>
+<script>
+  const slides = document.querySelectorAll('#slides .slide-img');
+  const prev = document.getElementById('prev');
+  const next = document.getElementById('next');
+  let current = 0;
 
-  <style>
-    html {
-      scroll-behavior: smooth;
-      /* Smooth scrolling for all links */
-    }
-  </style>
-
-  <script>
-    // Select all slides
-    const slides = document.querySelectorAll('#slides .slide');
-    const prev = document.getElementById('prev');
-    const next = document.getElementById('next');
-    let current = 0;
-
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.style.opacity = i === index ? "1" : "0";
-        slide.style.zIndex = i === index ? "1" : "0";
-      });
-    }
-
-    next.addEventListener('click', () => {
-      current = (current + 1) % slides.length;
-      showSlide(current);
+  // Show fade-in slide
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.style.opacity = i === index ? "1" : "0";
+      slide.style.zIndex = i === index ? "1" : "0";
     });
+  }
 
-    prev.addEventListener('click', () => {
-      current = (current - 1 + slides.length) % slides.length;
-      showSlide(current);
-    });
-
-    // Auto-play every 20s
-    setInterval(() => {
-      current = (current + 1) % slides.length;
-      showSlide(current);
-    }, 20000);
-
-    // Show first slide on load
+  next.addEventListener('click', () => {
+    current = (current + 1) % slides.length;
     showSlide(current);
-  </script>
+  });
+
+  prev.addEventListener('click', () => {
+    current = (current - 1 + slides.length) % slides.length;
+    showSlide(current);
+  });
+
+  setInterval(() => {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  }, 20000);
+
+  showSlide(current);
+
+  // Smooth parallax for all slides
+  let scrollY = 0;
+  let targetY = 0;
+
+  window.addEventListener('scroll', () => {
+    targetY = window.scrollY;
+  });
+
+  function smoothParallax() {
+    scrollY += (targetY - scrollY) * 0.08; // smooth easing, smaller = smoother
+    slides.forEach(slide => {
+      slide.style.transform = `translateY(${scrollY * 0.2}px)`; // subtle parallax
+    });
+    requestAnimationFrame(smoothParallax);
+  }
+
+  smoothParallax();
+</script>
+
 
 
   <!-- Welcome Message Section -->
