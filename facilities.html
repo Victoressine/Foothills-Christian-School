@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Foothills Christian School in Dodowa, Accra provides quality Christian education from early childhood to junior high. We nurture academic excellence, moral integrity, and leadership skills for future success.">
+  <meta name="keywords"
+    content="Foothills Christian School, Dodowa school, Christian education Ghana, primary school Accra, junior high school, best schools in Ghana, faith-based learning, quality education">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Foothills Christian School">
+  <title>Foothills Christian School – Academic and Moral Excellence</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome 5 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon (Logo in Browser Tab) -->
+  <link rel="icon" type="image/png" href="images/foothills-logo1.png">
+
+  <style>
+    @keyframes slidefade {
+      0% {
+        opacity: 0;
+        transform: translateX(100px);
+        /* start from right */
+      }
+
+      50% {
+        opacity: 1;
+        transform: translateX(0);
+        /* center */
+      }
+
+      100% {
+        opacity: 0;
+        transform: translateX(-100px);
+        /* fade left */
+      }
+    }
+
+    .animate-slidefade {
+      animation: slidefade 2.5s ease forwards;
+    }
+  </style>
+
+  <!-- Tailwind Custom Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            foothillsNavy: '#002b5c',   // dark navy from logo
+            foothillsRed: '#ff1f3d',    // red from logo
+            foothillsWhite: '#ffffff',  // white
+            foothillsGray: '#d9d9d9',   // optional light gray
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],  // custom font
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="font-sans text-gray-800">
+
+  <!-- Preloader Overlay -->
+  <div id="preloader" class="fixed inset-0 bg-slate-100 flex items-center justify-center z-50">
+    <img src="images/foothills-logo.png" alt="School Logo" class="w-32 h-32 object-contain animate-slidefade" />
+  </div>
+
+
+  <!-- Top Bar -->
+  <div class="bg-foothillsNavy text-gray-200 text-sm py-2 px-4">
+    <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center space-y-2 lg:space-y-0">
+
+      <!-- Left side -->
+      <div
+        class="flex flex-col sm:flex-row sm:flex-wrap sm:space-x-6 space-y-1 sm:space-y-0 text-slate-100 font-sans leading-tight">
+        <span class="flex items-center">
+          <i class="fas fa-map-marker-alt mr-1"></i>Hospital Street, Dodowa, Accra, Ghana
+        </span>
+        <span class="flex items-center">
+          <i class="fas fa-envelope mr-1"></i>
+          <a href="mailto:wfcsdodowa@gmail.com" class="ml-1 underline text-slate-100 hover:text-foothillsRed">
+            wfcsdodowa@gmail.com
+          </a>
+        </span>
+        <span class="flex items-center">
+          <a href="tel:+233501746739"
+            class="inline-flex items-center text-slate-100 hover:text-foothillsRed transition">
+            <i class="fas fa-phone-alt mr-2 text-slate-100"></i> +233 (0) 50 174 6739
+          </a>
+        </span>
+      </div>
+
+      <!-- Right side -->
+      <div class="flex space-x-4 justify-center lg:justify-end">
+        <a href="#" class="hover:text-blue-600"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-pink-600"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-sky-600"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-blue-600"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://wa.me/233000000000" target="_blank" class="hover:text-green-400"><i
+            class="fab fa-whatsapp"></i></a>
+        <a href="#" class="hover:text-red-500"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="bg-slate-100 shadow sticky top-0 z-50">
+    <div class="max-w-[90rem] mx-auto px-4 flex justify-between items-center py-4">
+
+      <!-- Logo -->
+      <div class="flex items-center justify-start space-x-4">
+        <img src="images/foothills-logo.png" alt="Foothills Christian School Logo" class="h-24 object-contain">
+        <h1
+          class="text-2xl sm:text-xl md:text-5xl lg:text-3xl xl:text-4xl font-bold text-foothillsNavy font-sans leading-tight">
+          Foothills Christian School
+        </h1>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <!-- Home -->
+      <nav class="hidden lg:flex space-x-6 text-base">
+        <a href="index.html" class="relative group font-semibold text-foothillsNavy hover:text-foothillsRed">
+          Home
+          <span
+            class="absolute left-1/2 -bottom-2 flex -translate-x-1/2 space-x-1 opacity-0 group-hover:opacity-100 transition">
+            <span class="w-1 h-1 bg-foothillsRed rounded-full"></span>
+            <span class="w-1 h-1 bg-foothillsRed rounded-full"></span>
+            <span class="w-1 h-1 bg-foothillsRed rounded-full"></span>
+          </span>
+        </a>
+
+        <!-- About -->
+        <div class="relative group">
+          <a href="#about" class="text-foothillsNavy font-semibold hover:text-foothillsRed inline-flex items-center">
+            About
+            <svg
+              class="ml-1 w-3 h-3 text-foothillsNavy group-hover:text-foothillsRed transition-transform duration-500 transform group-hover:rotate-180"
+              fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+          <div
+            class="absolute left-0 mt-2 w-40 bg-foothillsNavy text-foothillsWhite shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 ease-out z-10">
+            <a href="mission.html"
+              class="block px-4 py-2 rounded-md hover:bg-foothillsWhite hover:text-foothillsRed transition duration-300">Mission
+              & Vision</a>
+            <a href="leadership.html"
+              class="block px-4 py-2 rounded-md hover:bg-foothillsWhite hover:text-foothillsRed transition duration-300">Leadership</a>
+          </div>
+        </div>
+
+        <!-- Academics -->
+        <a href="academics.html"
+          class="relative group font-semibold text-foothillsNavy hover:text-foothillsRed inline-flex items-center">
+          Academics
+          <span
+            class="absolute left-1/2 -bottom-2 flex -translate-x-1/2 space-x-1 opacity-0 group-hover:opacity-100 transition">
+            <span class="w-1 h-1 bg-foothillsRed rounded-full"></span>
+            <span class="w-1 h-1 bg-foothillsRed rounded-full"></span>
+            <span class="w-1 h-1 bg-foothillsRed rounded-full"></span>
+          </span>
+        </a>
+
+        <!-- Admissions -->
+        <a href="admissions.html"
+          class="relative group font-semibold text-foothillsNavy hover:text-foothillsRed inline-flex items-center">
+          Admissions
+          <span
+            class="absolute left-1/2 -bottom-2 flex -translate-x-1/2 space-x-1 opacity-0 group-hover:opacity-100 transition">
+            <span class="w-1 h-1 bg-foothillsRed rounded-full"></span>
+            <span class="w-1 h-1 bg-foothillsRed rounded-full"></span>
+            <span class="w-1 h-1 bg-foothillsRed rounded-full"></span>
+          </span>
+        </a>
+
+        <!-- Facilities -->
+        <a href="facilities.html"
+          class="relative group font-semibold text-foothillsNavy hover:text-foothillsRed inline-flex items-center">
+          Facilities
+          <span
+            class="absolute left-1/2 -bottom-2 flex -translate-x-1/2 space-x-1 opacity-0 group-hover:opacity-100 transition">
+            <span class="w-1 h-1 bg-foothillsRed rounded-full"></span>
+            <span class="w-1 h-1 bg-foothillsRed rounded-full"></span>
+            <span class="w-1 h-1 bg-foothillsRed rounded-full"></span>
+          </span>
+        </a>
+
+        <!-- Gallery -->
+        <div class="relative group">
+          <a href="#gallery" class="text-foothillsNavy font-semibold hover:text-foothillsRed inline-flex items-center">
+            Gallery
+            <svg
+              class="ml-1 w-3 h-3 text-foothillsNavy group-hover:text-foothillsRed transition-transform duration-500 transform group-hover:rotate-180"
+              fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+          <div
+            class="absolute left-0 mt-2 w-40 bg-foothillsNavy text-foothillsWhite shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 ease-out z-10">
+            <a href="photos.html"
+              class="block px-4 py-2 rounded-md hover:bg-foothillsWhite hover:text-foothillsRed transition duration-300">Photos</a>
+            <a href="videos.html"
+              class="block px-4 py-2 rounded-md hover:bg-foothillsWhite hover:text-foothillsRed transition duration-300">Videos</a>
+          </div>
+        </div>
+
+        <!-- Community -->
+        <div class="relative group">
+          <a href="#community"
+            class="text-foothillsNavy font-semibold hover:text-foothillsRed inline-flex items-center">
+            Community
+            <svg
+              class="ml-1 w-3 h-3 text-foothillsNavy group-hover:text-foothillsRed transition-transform duration-500 transform group-hover:rotate-180"
+              fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+          <div
+            class="absolute left-0 mt-2 w-48 bg-foothillsNavy text-foothillsWhite shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 ease-out z-10">
+            <a href="announcement.html"
+              class="block px-4 py-2 rounded-md hover:bg-foothillsWhite hover:text-foothillsRed transition duration-300">Announcements</a>
+            <a href="event.html"
+              class="block px-4 py-2 rounded-md hover:bg-foothillsWhite hover:text-foothillsRed transition duration-300">Events</a>
+            <a href="faq.html"
+              class="block px-4 py-2 rounded-md hover:bg-foothillsWhite hover:text-foothillsRed transition duration-300">FAQ</a>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <a href="index.html#contact" class="relative group font-semibold text-foothillsNavy hover:text-foothillsRed">
+          Contact
+          <span
+            class="absolute left-1/2 -bottom-2 flex -translate-x-1/2 space-x-1 opacity-0 group-hover:opacity-100 transition">
+            <span class="w-1 h-1 bg-foothillsRed rounded-full"></span>
+            <span class="w-1 h-1 bg-foothillsRed rounded-full"></span>
+            <span class="w-1 h-1 bg-foothillsRed rounded-full"></span>
+          </span>
+        </a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="lg:hidden text-3xl sm:text-4xl md:text-5xl focus:outline-none text-foothillsNavy">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile/Tablet Menu -->
+    <!-- Home -->
+    <div id="mobile-menu" class="lg:hidden hidden bg-slate-100 border-t px-4 py-4 space-y-1">
+      <a href="index.html"
+        class="block py-2 px-2 rounded font-semibold text-foothillsNavy hover:bg-slate-300 text-base sm:text-lg md:text-2xl">Home</a>
+
+      <!-- About -->
+      <div>
+        <button
+          class="w-full flex justify-between items-center px-2 py-2 font-semibold text-foothillsNavy text-base sm:text-lg md:text-2xl hover:text-foothillsRed"
+          onclick="toggleDropdown('about-dropdown')">
+          About
+          <svg class="w-4 h-4 transition-transform" id="about-dropdown-icon" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="about-dropdown" class="hidden pl-4 mt-1 space-y-1">
+          <a href="mission.html"
+            class="block px-2 py-1 font-semibold text-foothillsNavy hover:bg-slate-300 rounded text-base sm:text-lg md:text-2xl">Mission
+            & Vision</a>
+          <a href="leadership.html"
+            class="block px-2 py-1 font-semibold text-foothillsNavy hover:bg-slate-300 rounded text-base sm:text-lg md:text-2xl">Leadership</a>
+        </div>
+      </div>
+
+      <!-- Academics -->
+      <a href="academics.html"
+        class="block py-2 px-2 rounded font-semibold text-foothillsNavy hover:bg-slate-300 text-base sm:text-lg md:text-2xl">
+        Academics
+      </a>
+
+      <!-- Admissions -->
+      <a href="admissions.html"
+        class="block py-2 px-2 rounded font-semibold text-foothillsNavy hover:bg-slate-300 text-base sm:text-lg md:text-2xl">
+        Admissions
+      </a>
+
+      <!-- Facilities -->
+      <a href="facilities.html"
+        class="block py-2 px-2 rounded font-semibold text-foothillsNavy hover:bg-slate-300 text-base sm:text-lg md:text-2xl">
+        Facilities
+      </a>
+
+      <!-- Gallery -->
+      <div>
+        <button
+          class="w-full flex justify-between items-center px-2 py-2 font-semibold text-foothillsNavy text-base sm:text-lg md:text-2xl hover:text-foothillsRed"
+          onclick="toggleDropdown('gallery-dropdown')">
+          Gallery
+          <svg class="w-4 h-4 transition-transform" id="gallery-dropdown-icon" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="gallery-dropdown" class="hidden pl-4 mt-1 space-y-1">
+          <a href="photos.html"
+            class="block px-2 py-1 font-semibold text-foothillsNavy hover:bg-slate-300 rounded text-base sm:text-lg md:text-2xl">Photos</a>
+          <a href="videos.html"
+            class="block px-2 py-1 font-semibold text-foothillsNavy hover:bg-slate-300 rounded text-base sm:text-lg md:text-2xl">Videos</a>
+        </div>
+      </div>
+
+      <!-- Community -->
+      <div>
+        <button
+          class="w-full flex justify-between items-center px-2 py-2 font-semibold text-foothillsNavy text-base sm:text-lg md:text-2xl hover:text-foothillsRed"
+          onclick="toggleDropdown('community-dropdown')">
+          Community
+          <svg class="w-4 h-4 transition-transform" id="community-dropdown-icon" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="community-dropdown" class="hidden pl-4 mt-1 space-y-1">
+          <a href="announcement.html"
+            class="block px-2 py-1 font-semibold text-foothillsNavy hover:bg-slate-300 rounded text-base sm:text-lg md:text-2xl">Announcements</a>
+          <a href="event.html"
+            class="block px-2 py-1 font-semibold text-foothillsNavy hover:bg-slate-300 rounded text-base sm:text-lg md:text-2xl">Events</a>
+          <a href="faq.html"
+            class="block px-2 py-1 font-semibold text-foothillsNavy hover:bg-slate-300 rounded text-base sm:text-lg md:text-2xl">FAQ</a>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <a href="index.html#contact"
+        class="block py-2 px-2 rounded font-semibold text-foothillsNavy hover:bg-slate-300 text-base sm:text-lg md:text-2xl">Contact</a>
+    </div>
+  </header>
+
+  <!-- Merged: Mobile menu, Preloader hide, AOS loader + init -->
+  <script>
+      (function () {
+        // Mobile menu
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        if (menuBtn && mobileMenu) {
+          menuBtn.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
+        }
+
+        // Dropdown mobile menu
+        window.toggleDropdown = function (id) {
+          const dropdown = document.getElementById(id);
+          const icon = document.getElementById(id + '-icon');
+          if (dropdown) dropdown.classList.toggle("hidden");
+          if (icon) icon.classList.toggle("rotate-180");
+        };
+
+        // Helper: ensure AOS library is present, load dynamically if needed
+        function ensureAOS(callback) {
+          if (typeof AOS !== 'undefined' && AOS && typeof AOS.init === 'function') {
+            return callback();
+          }
+          // load AOS dynamically and call callback on load
+          const s = document.createElement('script');
+          s.src = 'https://unpkg.com/aos@2.3.1/dist/aos.js';
+          s.async = true;
+          s.onload = () => callback();
+          s.onerror = () => {
+            console.warn('AOS failed to load from CDN. Check network / CSP.');
+            // still call callback to avoid blocking site
+            callback();
+          };
+          document.head.appendChild(s);
+        }
+
+        function initAOS() {
+          try {
+            if (typeof AOS !== 'undefined' && AOS && typeof AOS.init === 'function') {
+              AOS.init({ duration: 1000, once: true, offset: 100 });
+              // ensure AOS recalculates positions after load and after layout shifts
+              setTimeout(() => AOS.refresh(), 50);
+            } else {
+              // nothing to init (AOS didn't load), silently continue
+            }
+          } catch (e) {
+            console.error('AOS init error:', e);
+          }
+        }
+
+        // -- Preloader hide logic -- waits for full load, waits animation length, then hides overlay &
+        // initializes AOS (so animations run after preloader removed)
+        function hidePreloaderAndInitAOS() {
+          const pre = document.getElementById('preloader');
+          // duration must match your animation (2.5s) - tweak if you changed that
+          const animationWait = 2500;
+          if (!pre) {
+            // still ensure AOS is available and init
+            ensureAOS(initAOS);
+            return;
+          }
+
+          // Wait the animation duration, then fade preloader out and init AOS
+          setTimeout(() => {
+            pre.style.opacity = '0';
+            pre.style.transition = 'opacity 0.6s ease';
+            setTimeout(() => {
+              pre.style.display = 'none';
+              ensureAOS(initAOS);
+            }, 600);
+          }, animationWait);
+        }
+
+        if (document.readyState === 'complete') {
+          hidePreloaderAndInitAOS();
+        } else {
+          window.addEventListener('load', hidePreloaderAndInitAOS);
+        }
+
+      })();
+  </script>
+
+<!-- Hero -->
+  <section class="relative bg-cover bg-[position:center_top_40%] bg-no-repeat text-white py-32 text-center"
+    style="background-image: url('images/school-compound.png');">
+    <!-- Overlay for better text visibility -->
+    <div class="absolute inset-0 bg-foothillsNavy/70"></div>
+
+    <div class="relative max-w-4xl mx-auto px-6">
+      <h1 class="text-5xl md:text-5xl font-bold text-foothillsWhite mb-4 font-sans leading-tight">Our Facilities</h1>
+      <p class="text-lg md:text-xl font-semibold text-foothillsWhite font-serif leading-tight">
+      Explore the well-equipped facilities at Foothills Christian School, designed to inspire learning,
+        creativity, discipline, and spiritual growth for every student.
+      </p>
+    </div>
+  </section>
+
+  <!-- Facilities Section -->
+  <section class="py-20 bg-slate-100">
+    <div class="max-w-[90rem] mx-auto px-7">
+      <!-- Grid Layout -->
+      <div id="facilities" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <!-- Facility 1 -->
+        <div class="bg-foothillsNavy rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+          <img src="images/classroom.png" class="w-full h-80 object-cover cursor-pointer" alt="Classroom">
+          <div class="p-8">
+            <h3 class="text-xl font-bold text-foothillsWhite leading-tight tracking-tight font-sans">Learning-Friendly Classrooms</h3>
+            <p class="text-lg text-foothillsWhite mt-3 leading-tight tracking-tight font-serif">Our classrooms are designed to be welcoming, engaging, and supportive,
+              creating the perfect environment for effective learning.</p>
+          </div>
+        </div>
+
+        <!-- Facility 2 -->
+        <div class="bg-foothillsNavy rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+          <img src="images/dormitory.png" class="w-full h-80 object-cover cursor-pointer" alt="Boarding House">
+          <div class="p-8">
+            <h3 class="text-xl font-bold text-foothillsWhite leading-tight tracking-tight font-sans">Boarding House</h3>
+            <p class="text-lg text-foothillsWhite mt-3 leading-tight tracking-tight font-serif">Secure and well-supervised hostels that provide students with a safe,
+              supportive, and homely environment.</p>
+          </div>
+        </div>
+
+        <!-- Facility 3 -->
+        <div class="bg-foothillsNavy rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+          <img src="images/library.png" class="w-full h-80 object-cover cursor-pointer" alt="Library">
+          <div class="p-8">
+            <h3 class="text-xl font-bold text-foothillsWhite leading-tight tracking-tight font-sans">Library</h3>
+            <p class="text-lg text-foothillsWhite mt-3 leading-tight tracking-tight font-serif">A well-stocked library with a wide range of books and resources to
+              inspire reading, research, and knowledge building.</p>
+          </div>
+        </div>
+
+        <!-- Facility 4 -->
+        <div class="bg-foothillsNavy rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+          <img src="images/computer-lab.png" class="w-full h-80 object-cover cursor-pointer" alt="Computer Lab">
+          <div class="p-8">
+            <h3 class="text-xl font-bold text-foothillsWhite leading-tight tracking-tight font-sans">Computer Lab</h3>
+            <p class="text-lg text-foothillsWhite mt-3 leading-tight tracking-tight font-serif">Equipped with modern computers and internet access, our lab supports
+              hands-on learning and digital skills development.</p>
+          </div>
+        </div>
+
+        <!-- Facility 5 -->
+        <div class="bg-foothillsNavy rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+          <img src="images/school-compound.png" class="w-full h-80 object-cover cursor-pointer" alt="Large Compound">
+          <div class="p-8">
+            <h3 class="text-xl font-bold text-foothillsWhite leading-tight tracking-tight font-sans">Large Compound</h3>
+            <p class="text-lg text-foothillsWhite mt-3 leading-tight tracking-tight font-serif">A spacious compound that provides room for sports, recreation, and
+              outdoor activities in a safe environment.</p>
+          </div>
+        </div>
+
+        <!-- Facility 6 -->
+        <div class="bg-foothillsNavy rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+          <img src="images/auditorium.png" class="w-full h-80 object-cover cursor-pointer" alt="Auditorium">
+          <div class="p-8">
+            <h3 class="text-xl font-bold text-foothillsWhite leading-tight tracking-tight font-sans">Auditorium</h3>
+            <p class="text-lg text-foothillsWhite mt-3 leading-tight tracking-tight font-serif">A modern auditorium for hosting events, presentations, and
+              performances, offering students opportunities to learn and showcase their talents.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Fullscreen Modal -->
+  <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 hidden items-center justify-center z-50 p-4">
+    <!-- Close -->
+    <span onclick="closeModal()"
+      class="absolute top-4 right-6 text-white text-4xl md:text-5xl cursor-pointer font-bold">&times;</span>
+
+    <!-- Prev Button -->
+    <button id="prevBtn"
+      class="absolute left-4 text-white text-4xl md:text-5xl font-bold px-4 py-2 hover:text-yellow-400">&#10094;</button>
+
+    <!-- Image -->
+    <img id="modalImage" class="max-h-[80vh] max-w-[90vw] w-auto h-auto rounded-lg shadow-lg object-contain">
+
+    <!-- Next Button -->
+    <button id="nextBtn"
+      class="absolute right-4 text-white text-4xl md:text-5xl font-bold px-4 py-2 hover:text-yellow-400">&#10095;</button>
+  </div>
+
+  <script>
+    const images = Array.from(document.querySelectorAll("#facilities img")); // ✅ fixed here
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    let currentIndex = 0;
+
+    function openModal(index) {
+      currentIndex = index;
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+      showImage();
+    }
+
+    function closeModal() {
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+    }
+
+    function showImage() {
+      modalImg.src = images[currentIndex].src;
+      modalImg.alt = images[currentIndex].alt;
+    }
+
+    function nextImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage();
+    }
+
+    function prevImage() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      showImage();
+    }
+
+    images.forEach((img, index) => {
+      img.addEventListener("click", () => openModal(index));
+    });
+
+    document.getElementById("nextBtn").addEventListener("click", nextImage);
+    document.getElementById("prevBtn").addEventListener("click", prevImage);
+
+    // Close modal when clicking background
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    // Keyboard navigation
+    document.addEventListener("keydown", (e) => {
+      if (!modal.classList.contains("hidden")) {
+        if (e.key === "ArrowRight") nextImage();
+        if (e.key === "ArrowLeft") prevImage();
+        if (e.key === "Escape") closeModal();
+      }
+    });
+  </script>
+
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-foothillsNavy text-white py-12 mt-16 relative" data-aos="fade-up">
+    <div class="max-w-[90rem] mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 text-center md:text-left">
+
+        <!-- Logo + Write-up -->
+        <div>
+          <img src="images/foothills-logo.png" alt="School Logo" class="w-28 mx-auto md:mx-0 mb-4">
+          <h3 class="text-lg font-semibold text-foothillsRed font-sans leading-tight">Foothills Christian School</h3>
+          <p class="text-slate-100 mt-2 text-1xl font-serif leading-tight">"Arise and Shine"
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-lg font-semibold mb-3 text-foothillsRed">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-slate-100 hover:text-foothillsRed">Home</a></li>
+            <li><a href="academics.html" class="text-slate-100 hover:text-foothillsRed">Academics</a></li>
+            <li><a href="announcement.html" class="text-slate-100 hover:text-foothillsRed">Announcements</a></li>
+            <li><a href="event.html" class="text-slate-100 hover:text-foothillsRed">Events</a></li>
+            <li><a href="faq.html" class="text-slate-100 hover:text-foothillsRed">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="space-y-3">
+          <div>
+            <h3 class="text-lg font-semibold mb-3 text-foothillsRed">Contact Info</h3>
+          </div>
+
+          <!-- Phone 1 -->
+          <div class="text-sm">
+            <a href="tel:+233123456789"
+              class="inline-flex items-center text-slate-100 hover:text-foothillsRed transition">
+              <i class="fas fa-phone-alt mr-2 text-slate-100"></i> +233 (0) 50 174 6739
+            </a>
+          </div>
+
+          <!-- Phone 2 -->
+          <div class="text-sm">
+            <a href="tel:+233987654321"
+              class="inline-flex items-center text-slate-100 hover:text-foothillsRed transition">
+              <i class="fas fa-phone-alt mr-2 text-slate-100"></i> +233 (0) 24 436 5922
+            </a>
+          </div>
+
+          <!-- Phone 3 -->
+          <div class="text-sm">
+            <a href="tel:+233555444333"
+              class="inline-flex items-center text-slate-100 hover:text-foothillsRed transition">
+              <i class="fas fa-phone-alt mr-2 text-slate-100"></i> +233 (0) 549531333
+            </a>
+          </div>
+
+          <!-- Email -->
+          <div class="text-sm mt-2">
+            <a href="mailto:info@wofcs.edu"
+              class="inline-flex items-center text-slate-100 hover:text-foothillsRed transition">
+              <i class="fas fa-envelope mr-2 text-slate-100"></i> wfcsdodowa@gmail.com
+            </a>
+          </div>
+
+          <!-- Address (not clickable) -->
+          <div class="text-sm">
+            <div class="inline-flex items-center text-slate-100">
+              <i class="fas fa-map-marker-alt mr-2 text-red-500"></i>
+              Hospital Street, Dodowa, Accra, Ghana
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Media -->
+        <div text-center>
+          <h3 class="text-lg font-semibold mb-3 text-foothillsRed">Follow Us</h3>
+          <ul class="space-y-2">
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                class="text-slate-100 hover:text-foothillsRed">Facebook</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                class="text-slate-100 hover:text-foothillsRed">Instagram</a></li>
+            <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"
+                class="text-slate-100 hover:text-foothillsRed">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                class="text-slate-100 hover:text-foothillsRed">LinkedIn</a></li>
+            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"
+                class="text-slate-100 hover:text-foothillsRed">YouTube</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="mt-10 border-t border-slate-100 pt-6 text-center text-slate-100 text-sm font-sans leading-tight">
+        &copy; <span id="currentYear"></span> Foothills Christian School. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn"
+    class="fixed bottom-6 right-6 bg-foothillsWhite text-foothillsNavy p-3 rounded-full shadow-lg hover:bg-foothillsRed transition-opacity duration-300 opacity-0 pointer-events-none">
+    ↑
+  </button>
+
+  <!-- JS -->
+  <script>
+    // Auto year
+    const yearEl = document.getElementById('currentYear');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+
+    // Scroll to Top button
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        scrollTopBtn.classList.remove("opacity-0", "pointer-events-none");
+        scrollTopBtn.classList.add("opacity-100");
+      } else {
+        scrollTopBtn.classList.add("opacity-0", "pointer-events-none");
+        scrollTopBtn.classList.remove("opacity-100");
+      }
+    });
+
+    scrollTopBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
