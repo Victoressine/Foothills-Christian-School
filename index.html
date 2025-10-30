@@ -89,7 +89,7 @@
       <div
         class="flex flex-col sm:flex-row sm:flex-wrap sm:space-x-6 space-y-1 sm:space-y-0 text-slate-100 font-sans leading-tight">
         <span class="flex items-center">
-          <i class="fas fa-map-marker-alt mr-1"></i>Hospital Street, Dodowa, Accra, Ghana
+          <i class="fas fa-map-marker-alt mr-1"></i>Hospital Street, Dodowa, Accra-Ghana
         </span>
         <span class="flex items-center">
           <i class="fas fa-envelope mr-1"></i>
@@ -432,113 +432,114 @@
   </script>
 
   <!-- Hero Section with Smooth Parallax Slideshow and Overlay Always Visible -->
-<section id="hero" class="relative w-full overflow-hidden scroll-smooth">
+  <section id="hero" class="relative w-full overflow-hidden scroll-smooth">
 
-  <!-- Slides -->
-  <div id="slides" class="relative w-full h-[320px] sm:h-[420px] md:h-[520px] lg:h-[620px] xl:h-[720px]">
-    <img src="images/school001.png"
-      class="slide-img w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-1000 opacity-0"
-      alt="Slide 1">
-    <img src="images/school-compound.png"
-      class="slide-img w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-1000 opacity-0"
-      alt="Slide 2">
-    <img src="images/image010.png"
-      class="slide-img w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-1000 opacity-0"
-      alt="Slide 3">
-    <img src="images/junior-high-students.png"
-      class="slide-img w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-1000 opacity-0"
-      alt="Slide 4">
-    <img src="images/library.png"
-      class="slide-img w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-1000 opacity-0"
-      alt="Slide 5">
-  </div>
-
-  <!-- Overlay Content (Highest z-index to always display) -->
-  <div class="absolute inset-0 flex items-center justify-center px-4 z-20">
-    <div class="bg-foothillsNavy/30 p-4 sm:p-6 md:p-8 rounded-lg text-center max-w-4xl lg:max-w-5xl">
-      <h1
-        class="w-full max-w-6xl text-center lg:text-left text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foothillsWhite mx-auto px-4 font-sans leading-tight">
-        Foothills Christian School
-      </h1>
-      <p
-        class="mt-2 text-base sm:text-lg md:text-xl lg:text-2xl text-foothillsRed font-semibold font-serif leading-tight">
-        Accra, Ghana
-      </p>
+    <!-- Slides -->
+    <div id="slides" class="relative w-full h-[320px] sm:h-[420px] md:h-[520px] lg:h-[620px] xl:h-[720px]">
+      <img src="images/school001.png"
+        class="slide-img w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-1000 opacity-0"
+        alt="Slide 1">
+      <img src="images/school-compound.png"
+        class="slide-img w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-1000 opacity-0"
+        alt="Slide 2">
+      <img src="images/image010.png"
+        class="slide-img w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-1000 opacity-0"
+        alt="Slide 3">
+      <img src="images/junior-high-students.png"
+        class="slide-img w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-1000 opacity-0"
+        alt="Slide 4">
+      <img src="images/library.png"
+        class="slide-img w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-1000 opacity-0"
+        alt="Slide 5">
     </div>
-  </div>
 
-  <!-- Navigation Arrows -->
-  <button id="prev"
-    class="absolute top-1/2 left-4 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full hover:bg-green-600 transition z-30">
-    &#10094;
-  </button>
-  <button id="next"
-    class="absolute top-1/2 right-4 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full hover:bg-green-600 transition z-30">
-    &#10095;
-  </button>
+    <!-- Overlay Content (Highest z-index to always display) -->
+    <div class="absolute inset-0 flex items-center justify-center px-4 z-20">
+      <div class="bg-foothillsNavy/30 p-4 sm:p-6 md:p-8 rounded-lg text-center max-w-4xl lg:max-w-5xl">
+        <h1
+          class="w-full max-w-6xl text-center lg:text-left text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foothillsWhite mx-auto px-4 font-sans leading-tight">
+          Foothills Christian School
+        </h1>
+        <p
+          class="mt-2 text-base sm:text-lg md:text-xl lg:text-2xl text-foothillsRed font-semibold font-serif leading-tight">
+          Accra, Ghana
+        </p>
+      </div>
+    </div>
 
-</section>
+    <!-- Navigation Arrows -->
+    <button id="prev"
+      class="absolute top-1/2 left-4 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full hover:bg-green-600 transition z-30">
+      &#10094;
+    </button>
+    <button id="next"
+      class="absolute top-1/2 right-4 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full hover:bg-green-600 transition z-30">
+      &#10095;
+    </button>
 
-<style>
-  html {
-    scroll-behavior: smooth;
-  }
+  </section>
 
-  #hero .slide-img {
-    will-change: transform;
-    z-index: 0; /* Ensure slides stay under overlay */
-  }
-</style>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
 
-<script>
-  const slides = document.querySelectorAll('#slides .slide-img');
-  const prev = document.getElementById('prev');
-  const next = document.getElementById('next');
-  let current = 0;
+    #hero .slide-img {
+      will-change: transform;
+      z-index: 0;
+      /* Ensure slides stay under overlay */
+    }
+  </style>
 
-  // Show fade-in slide
-  function showSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.style.opacity = i === index ? "1" : "0";
-      slide.style.zIndex = 0; // slides stay under overlay
+  <script>
+    const slides = document.querySelectorAll('#slides .slide-img');
+    const prev = document.getElementById('prev');
+    const next = document.getElementById('next');
+    let current = 0;
+
+    // Show fade-in slide
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.style.opacity = i === index ? "1" : "0";
+        slide.style.zIndex = 0; // slides stay under overlay
+      });
+    }
+
+    next.addEventListener('click', () => {
+      current = (current + 1) % slides.length;
+      showSlide(current);
     });
-  }
 
-  next.addEventListener('click', () => {
-    current = (current + 1) % slides.length;
-    showSlide(current);
-  });
-
-  prev.addEventListener('click', () => {
-    current = (current - 1 + slides.length) % slides.length;
-    showSlide(current);
-  });
-
-  setInterval(() => {
-    current = (current + 1) % slides.length;
-    showSlide(current);
-  }, 20000);
-
-  showSlide(current);
-
-  // Smooth parallax for slides
-  let scrollY = 0;
-  let targetY = 0;
-
-  window.addEventListener('scroll', () => {
-    targetY = window.scrollY;
-  });
-
-  function smoothParallax() {
-    scrollY += (targetY - scrollY) * 0.08; // smooth easing
-    slides.forEach(slide => {
-      slide.style.transform = `translateY(${scrollY * 0.2}px)`; // subtle parallax
+    prev.addEventListener('click', () => {
+      current = (current - 1 + slides.length) % slides.length;
+      showSlide(current);
     });
-    requestAnimationFrame(smoothParallax);
-  }
 
-  smoothParallax();
-</script>
+    setInterval(() => {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    }, 20000);
+
+    showSlide(current);
+
+    // Smooth parallax for slides
+    let scrollY = 0;
+    let targetY = 0;
+
+    window.addEventListener('scroll', () => {
+      targetY = window.scrollY;
+    });
+
+    function smoothParallax() {
+      scrollY += (targetY - scrollY) * 0.08; // smooth easing
+      slides.forEach(slide => {
+        slide.style.transform = `translateY(${scrollY * 0.2}px)`; // subtle parallax
+      });
+      requestAnimationFrame(smoothParallax);
+    }
+
+    smoothParallax();
+  </script>
 
   <!-- Welcome Message Section -->
   <section id="headmaster-address" class="bg-slate-100 scroll-smooth" data-aos="fade-up">
@@ -587,8 +588,9 @@
         </p>
 
         <!-- Signature -->
-         <p class="mb-6 leading-relaxed text-xl italic text-right leading-tight tracking-tight text-gray-900 font-serif" data-aos="fade-up">
-       Pastor John Komi Soudi<br>
+        <p class="mb-6 leading-relaxed text-xl italic text-right leading-tight tracking-tight text-gray-900 font-serif"
+          data-aos="fade-up">
+          Pastor John Komi Soudi<br>
           <span class="not-italic font-medium font-serif leading-tight">Headmaster</span>
         </p>
       </div>
@@ -621,36 +623,35 @@
       </div>
     </div>
 
-   <!-- Stats Floating -->
-<div
-  class="absolute bottom-2 sm:bottom-6 right-1/2 sm:right-6 translate-x-1/2 sm:translate-x-0 
+    <!-- Stats Floating -->
+    <div class="absolute bottom-2 sm:bottom-6 right-1/2 sm:right-6 translate-x-1/2 sm:translate-x-0 
          bg-foothillsNavy/30 backdrop-blur-sm rounded-md sm:rounded-lg 
          p-2 sm:p-5 grid grid-cols-3 gap-3 sm:gap-6 text-center w-[90%] sm:w-auto">
 
-  <!-- Students -->
-  <div>
-    <div class="text-xl sm:text-4xl font-extrabold text-foothillsWhite leading-tight">
-      <span class="counter" data-target="150">0</span><span class="text-sm sm:text-lg">+</span>
-    </div>
-    <div class="text-xs sm:text-base text-white leading-tight">Students</div>
-  </div>
+      <!-- Students -->
+      <div>
+        <div class="text-xl sm:text-4xl font-extrabold text-foothillsWhite leading-tight">
+          <span class="counter" data-target="150">0</span><span class="text-sm sm:text-lg">+</span>
+        </div>
+        <div class="text-xs sm:text-base text-white leading-tight">Students</div>
+      </div>
 
-  <!-- Teachers -->
-  <div>
-    <div class="text-xl sm:text-4xl font-extrabold text-foothillsWhite leading-tight">
-      <span class="counter" data-target="32">0</span><span class="text-sm sm:text-lg">+</span>
-    </div>
-    <div class="text-xs sm:text-base text-white leading-tight">Teachers</div>
-  </div>
+      <!-- Teachers -->
+      <div>
+        <div class="text-xl sm:text-4xl font-extrabold text-foothillsWhite leading-tight">
+          <span class="counter" data-target="32">0</span><span class="text-sm sm:text-lg">+</span>
+        </div>
+        <div class="text-xs sm:text-base text-white leading-tight">Teachers</div>
+      </div>
 
-  <!-- Families -->
-  <div>
-    <div class="text-xl sm:text-4xl font-extrabold text-foothillsWhite leading-tight">
-      <span class="counter" data-target="130">0</span><span class="text-sm sm:text-lg">+</span>
+      <!-- Families -->
+      <div>
+        <div class="text-xl sm:text-4xl font-extrabold text-foothillsWhite leading-tight">
+          <span class="counter" data-target="130">0</span><span class="text-sm sm:text-lg">+</span>
+        </div>
+        <div class="text-xs sm:text-base text-white leading-tight">Families</div>
+      </div>
     </div>
-    <div class="text-xs sm:text-base text-white leading-tight">Families</div>
-  </div>
-</div>
 
     </div>
   </section>
@@ -741,12 +742,11 @@
         <!-- Mission & Vision Box -->
         <div class="p-4 sm:p-6 rounded-2xl shadow-sm bg-white flex flex-col">
           <h2
-            class="text-1xl sm:text-2xl lg:text-3xl font-bold mb-4 bg-gradient-to-r from-foothillsNavy via-red-700 to-black text-transparent bg-clip-text font-sans leading-tight">
+            class="text-2xl sm:text-2xl lg:text-3xl font-bold mb-4 bg-gradient-to-r from-foothillsNavy via-red-700 to-black text-transparent bg-clip-text font-sans leading-tight">
             Our Mission & Vision
           </h2>
 
-          <ul
-            class="mb-6 leading-relaxed text-xl leading-tight tracking-tight text-gray-900 font-serif">
+          <ul class="mb-6 leading-relaxed text-xl leading-tight tracking-tight text-gray-900 font-serif">
             <li>
               <strong class="text-foothillsNavy">Mission:</strong>
               “To provide a Christ-centered, holistic education that fosters academic excellence,
@@ -813,7 +813,7 @@
           <!-- Content -->
           <h3 class="text-2xl font-semibold mb-4 text-foothillsNavy font-sans leading-tight">Academics</h3>
           <p class="mb-6 leading-relaxed text-xl leading-tight tracking-tight text-gray-900 font-serif"
-          data-aos="fade-up">
+            data-aos="fade-up">
             Our academic program fosters intellectual growth, creativity, and spiritual development.
             We proudly offer the <strong>Oxford International Curriculum</strong> alongside the
             <strong>Ghana Education Service (GES) curriculum</strong>, enriched with Christian values to build a strong
@@ -842,7 +842,7 @@
           <!-- Content -->
           <h3 class="text-2xl font-semibold mb-4 text-foothillsNavy font-sans leading-tight">Facilities</h3>
           <p class="mb-6 leading-relaxed text-xl leading-tight tracking-tight text-gray-900 font-serif"
-          data-aos="fade-up">
+            data-aos="fade-up">
             Our campus provides state-of-the-art classrooms, safe play areas, and dedicated spaces for
             <strong>arts, sports, ICT, and worship</strong>. Every facility is designed to support academic excellence,
             creativity, physical well-being, and spiritual growth of our students.
@@ -870,7 +870,7 @@
           <!-- Content -->
           <h3 class="text-2xl font-semibold mb-4 text-foothillsNavy font-sans leading-tight">Admissions</h3>
           <p class="mb-6 leading-relaxed text-xl leading-tight tracking-tight text-gray-900 font-serif"
-          data-aos="fade-up">
+            data-aos="fade-up">
             Our admissions process is simple and transparent. We require an admission form, previous school reports,
             a birth certificate, and an entrance assessment. Affordable fees and discounts for early payments make
             <strong>quality Christian education accessible</strong> to all families.
@@ -905,7 +905,8 @@
                   <i class="fas fa-bullhorn mr-2 text-foothillsNavy"></i> Announcements
                 </h3>
                 <p class="mb-6 leading-relaxed text-xl leading-tight tracking-tight text-gray-900 font-serif">
-                  Stay updated on admissions, term schedules, achievements, and school notices at Foothills Christian School.
+                  Stay updated on admissions, term schedules, achievements, and school notices at Foothills Christian
+                  School.
                 </p>
               </div>
             </div>
@@ -931,7 +932,8 @@
                   <i class="fas fa-calendar-alt mr-2 text-foothillsNavy"></i> Events
                 </h3>
                 <p class="mb-6 leading-relaxed text-xl leading-tight tracking-tight text-gray-900 font-serif">
-                  Join us for events like sports festivals, cultural days, and excursions that celebrate talent, leadership, and faith.
+                  Join us for events like sports festivals, cultural days, and excursions that celebrate talent,
+                  leadership, and faith.
                 </p>
               </div>
             </div>
@@ -957,7 +959,8 @@
                   <i class="fas fa-image mr-2 text-foothillsNavy"></i> Gallery
                 </h3>
                 <p class="mb-6 leading-relaxed text-xl leading-tight tracking-tight text-gray-900 font-serif">
-                  Explore student life at Foothills Christian School through academics, faith, sports, arts, and community events.
+                  Explore student life at Foothills Christian School through academics, faith, sports, arts, and
+                  community events.
                 </p>
               </div>
             </div>
@@ -1019,14 +1022,14 @@
           <div class="flex-grow border-t border-foothillsWhite"></div>
         </div>
 
-        
+
         <p class="mb-6 leading-relaxed text-lg leading-tight tracking-tight text-foothillsWhite font-serif">
           We would love to hear from you. Reach out with any questions about admissions, events, or how to become part
           of Foothills Christian School family.
         </p>
 
         <ul
-          class="mb-6 leading-relaxed text-sm leading-tight tracking-tight text-foothillsWhite font-sans list-none space-y-3">
+          class="mb-6 leading-relaxed text-lg leading-tight tracking-tight text-foothillsWhite font-serif list-none space-y-3">
           <li><strong>📍 Address:</strong> Hospital Street, Dodowa, Accra, Ghana</li>
           <li><strong>📞 Phone:</strong> 050 174 6739 / 024 436 5922 / 054 953 1333</li>
           <li><strong>✉️ Email:</strong> wfcsdodowa@gmail.com</li>
